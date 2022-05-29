@@ -7,12 +7,23 @@
     "start": "sanity start",
     "build": "sanity build public -y",
     "deploy": "sanity deploy",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
+    "format:check": "prettier --list-different \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
+    "lint": "eslint \"./**/*.{js, jsx,ts,tsx}\" --quiet --fix"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "@sanity/base": "^2.29.5",
     "@sanity/client": "^3.3.0",
     "@sanity/components": "^2.14.0",
@@ -38,13 +49,8 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "prettier": "^2.5.1",
     "@sanity/cli": "^2.29.5",
     "@types/validator": "^13.7.1"
-  },
-  "workspaces": {
-    "nohoist": [
-      "@sanity/**",
-      "sanity-*"
-    ]
   }
 }
