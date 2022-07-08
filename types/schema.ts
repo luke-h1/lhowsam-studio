@@ -23,6 +23,7 @@ export interface Project extends Document<Project> {
   order: number;
   slug: Slug;
   tags: Tag[];
+  image: Image;
   siteUrl?: string;
   githubUrl: string;
 }
