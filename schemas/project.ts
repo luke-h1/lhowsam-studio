@@ -1,6 +1,7 @@
 import { DocumentIcon } from '@sanity/icons';
 import { Document } from '../types/sanity';
 import { Project } from '../types/schema';
+import altField from './fields/altField';
 
 const project: Document<Project> = {
   name: 'project',
@@ -22,6 +23,15 @@ const project: Document<Project> = {
         source: 'title',
       },
       validation: rule => rule.required(),
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [altField()],
     },
     {
       name: 'intro',
