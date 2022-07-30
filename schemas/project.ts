@@ -25,15 +25,6 @@ const project: Document<Project> = {
       validation: rule => rule.required(),
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [altField()],
-    },
-    {
       name: 'intro',
       title: 'Intro',
       type: 'text',
