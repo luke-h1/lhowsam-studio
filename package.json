@@ -52,7 +52,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "@sanity/cli": "^2.31.0",
+    "@sanity/cli": "^2.31.1",
     "@types/validator": "^13.7.6",
     "prettier": "^2.7.1"
   }
