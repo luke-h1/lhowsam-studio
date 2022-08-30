@@ -18,7 +18,7 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "2.31.0",
+    "@sanity/base": "2.31.1",
     "@sanity/client": "3.3.6",
     "@sanity/components": "2.14.0",
     "@sanity/core": "2.31.1",
