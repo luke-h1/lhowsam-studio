@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@sanity/base": "2.33.0",
-    "@sanity/client": "3.3.6",
+    "@sanity/client": "3.4.1",
     "@sanity/components": "2.14.0",
     "@sanity/core": "2.33.0",
     "@sanity/default-layout": "2.33.0",
