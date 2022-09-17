@@ -66,6 +66,16 @@ const project: Document<Project> = {
       type: 'number',
       hidden: true,
     },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [altField()],
+      // validation: rule => rule.required(),
+    },
   ],
   preview: {
     select: {
