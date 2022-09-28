@@ -18,19 +18,19 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "2.33.3",
+    "@sanity/base": "2.34.0",
     "@sanity/client": "3.4.1",
     "@sanity/components": "2.14.0",
-    "@sanity/core": "2.33.3",
-    "@sanity/default-layout": "2.33.3",
-    "@sanity/default-login": "2.33.3",
-    "@sanity/desk-tool": "2.33.3",
+    "@sanity/core": "2.34.0",
+    "@sanity/default-layout": "2.34.0",
+    "@sanity/default-login": "2.34.0",
+    "@sanity/desk-tool": "2.34.0",
     "@sanity/eslint-config-studio": "2.0.0",
     "@sanity/icons": "^1.3.6",
     "@sanity/image-url": "1.0.1",
-    "@sanity/structure": "2.33.2",
+    "@sanity/structure": "2.34.0",
     "@sanity/ui": "0.38.2",
-    "@sanity/vision": "2.33.3",
+    "@sanity/vision": "2.34.0",
     "check-node-version": "^4.2.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
@@ -47,13 +47,13 @@
     "sanity-plugin-markdown": "^2.1.1",
     "sanity-plugin-media": "1.4.11",
     "sanity-plugin-order-documents": "0.0.23",
-    "styled-components": "^5.3.3",
-    "typescript": "4.8.3",
+    "styled-components": "^5.3.6",
+    "typescript": "4.8.4",
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "@sanity/cli": "^2.33.3",
-    "@types/validator": "^13.7.6",
+    "@sanity/cli": "^2.34.0",
+    "@types/validator": "^13.7.7",
     "prettier": "^2.7.1"
   }
 }
