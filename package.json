@@ -30,7 +30,7 @@
     "@sanity/image-url": "1.0.1",
     "@sanity/structure": "2.33.2",
     "@sanity/ui": "0.38.2",
-    "@sanity/vision": "2.33.3",
+    "@sanity/vision": "2.34.0",
     "check-node-version": "^4.2.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
