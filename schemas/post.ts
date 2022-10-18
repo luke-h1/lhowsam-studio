@@ -34,7 +34,7 @@ const post: Document<Post> = {
     },
     {
       name: 'content',
-      title: 'Content',
+      title: 'content',
       description: 'Content of blog post',
       type: 'markdown',
       validation: rule => rule.required(),
