@@ -51,7 +51,7 @@ const project: Document<Project> = {
       title: 'Github URL',
       type: 'string',
       description: 'Github URL of project',
-      validation: rule => rule.required(),
+      validation: rule => rule.uri({ scheme: ['https'] }),
     },
     {
       name: 'tags',
