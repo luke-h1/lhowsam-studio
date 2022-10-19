@@ -39,9 +39,6 @@ jobs:
       - name: build
         run: npm run build
         
-      - name: install vercel
-        run: npm i -g vercel
-
       - name: Deploy production
         run: vc -f --prod --token ${VERCEL_TOKEN}
         env:
