@@ -11,7 +11,7 @@
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
     "format:check": "prettier --list-different \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
     "lint": "eslint \"./**/*.{js, jsx,ts,tsx}\" --quiet --fix",
-    "check:node": "check-node-version --node 16 --npm 8",
+    "check:node": "check-node-version --node 18 --npm 9",
     "preinstall": "npm run check:node"
   },
   "keywords": [
