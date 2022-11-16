@@ -48,7 +48,7 @@
     "sanity-plugin-media": "1.4.13",
     "sanity-plugin-order-documents": "0.0.23",
     "styled-components": "^5.3.6",
-    "typescript": "4.8.4",
+    "typescript": "4.9.3",
     "validator": "^13.7.0"
   },
   "devDependencies": {
