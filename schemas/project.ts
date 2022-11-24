@@ -59,12 +59,6 @@ const project: Document<Project> = {
       of: [{ type: 'reference', to: { type: 'tag' } }],
       validation: rule => rule.required().min(1),
     },
-    {
-      name: 'order',
-      title: 'Order',
-      type: 'number',
-      hidden: true,
-    },
   ],
   preview: {
     select: {
