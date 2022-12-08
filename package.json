@@ -54,6 +54,6 @@
     "@sanity/cli": "^2.35.0",
     "@types/validator": "^13.7.10",
     "prettier": "^2.7.1",
-    "vercel": "^28.7.2"
+    "vercel": "^28.8.0"
   }
 }
