@@ -10,7 +10,7 @@
     "tsc": "tsc --noEmit",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
     "format:check": "prettier --list-different \"./**/*.{js,jsx,ts,tsx,css,scss,html}\"",
-    "lint": "eslint \"./**/*.{js, jsx,ts,tsx}\" --quiet --fix",
+    "lint": "eslint --ext js,jsx,ts,tsx --quiet --fix",
     "check:node": "check-node-version --node 18 --npm 8",
     "preinstall": "npm run check:node"
   },
@@ -32,6 +32,7 @@
     "@sanity/ui": "0.38.2",
     "@sanity/vision": "2.35.0",
     "check-node-version": "^4.2.1",
+    "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^3.5.2",

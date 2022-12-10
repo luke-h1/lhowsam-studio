@@ -19,25 +19,43 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18.12.1
 
-      - name: Install npm
-        run: npm i -g npm@8
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies 
-        run: npm ci
+        run: pnpm i
 
       - name: format
-        run: npm run format
+        run: pnpm run format
 
       - name: lint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: tsc
-        run: npm run tsc
+        run: pnpm run tsc
 
       - name: build
-        run: npm run build
+        run: pnpm run build
 
       - name: Deploy preview
         if: contains( github.ref, 'dev')
