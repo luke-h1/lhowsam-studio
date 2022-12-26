@@ -63,7 +63,7 @@ jobs:
         uses: luke-h1/checkout@v2
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm i --no-frozen-lockfile
 
       - name: format
         run: pnpm run format
