@@ -18,4 +18,4 @@ tsconfig.tsbuildinfo
 src/frontend/public/sitemap.xml
 src/frontend/public/robots.txt
 analyze/
-dist
+dist.sanity
