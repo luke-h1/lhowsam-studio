@@ -1,45 +1,43 @@
-import { DocumentIcon } from '@sanity/icons';
-import { Document } from '../types/sanity';
-import { Post } from '../types/schema';
-import altField from './fields/altField';
+import {defineType, defineField} from 'sanity'
+import altField from './fields/altField'
 
-const post: Document<Post> = {
+const post = defineType({
   name: 'post',
   title: 'Blog Posts',
   type: 'document',
-  icon: DocumentIcon,
   fields: [
-    {
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
       options: {
         source: 'title',
       },
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'intro',
       title: 'Intro',
       description: 'short intro of the blog post',
       type: 'text',
       rows: 3,
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+
+    defineField({
       name: 'content',
-      title: 'content',
+      title: 'Content',
       description: 'Content of blog post',
       type: 'markdown',
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
@@ -47,21 +45,21 @@ const post: Document<Post> = {
         hotspot: true,
       },
       fields: [altField()],
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'publish date',
       type: 'date',
-      validation: rule => rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'tags',
       title: 'Tags',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'tag' } }],
-      validation: rule => rule.required(),
-    },
+      of: [{type: 'reference', to: {type: 'tag'}}],
+      validation: (rule) => rule.required(),
+    }),
   ],
   preview: {
     select: {
@@ -69,5 +67,5 @@ const post: Document<Post> = {
       intro: 'intro',
     },
   },
-};
-export default post;
+})
+export default post
