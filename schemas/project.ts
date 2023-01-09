@@ -56,13 +56,6 @@ const project = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'isPublished',
-      title: 'Published',
-      type: 'boolean',
-      description: 'Set this to true to publish the post',
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
       name: 'order',
       title: 'Order',
       type: 'number',
