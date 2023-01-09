@@ -60,6 +60,13 @@ const post = defineType({
       of: [{type: 'reference', to: {type: 'tag'}}],
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'isPublished',
+      title: 'Published',
+      type: 'boolean',
+      description: 'Set this to true to publish the post',
+      validation: (rule) => rule.required(),
+    }),
   ],
   preview: {
     select: {
