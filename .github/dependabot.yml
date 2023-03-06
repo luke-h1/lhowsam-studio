@@ -8,3 +8,6 @@ updates:
       time: "09:00"
     assignees: 
     - luke-h1
+    rebase-strategy: "auto"
+    labels:
+    - "dependencies"
