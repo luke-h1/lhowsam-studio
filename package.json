@@ -21,32 +21,32 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^3.2.3",
+    "@sanity/vision": "^3.6.0",
     "check-node-version": "^4.2.1",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-cypress": "2.12.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
-    "sanity-plugin-markdown": "^4.0.0",
-    "sanity": "^3.2.3",
-    "styled-components": "^5.2.0"
+    "sanity": "^3.6.0",
+    "sanity-plugin-markdown": "^4.1.0",
+    "styled-components": "^5.3.8"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "easymde": "^2.18.0",
-    "eslint": "^8.6.0",
-    "prettier": "^2.8.1",
-    "typescript": "^4.0.0",
-    "vercel": "^28.10.1"
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5",
+    "vercel": "^28.16.15"
   },
   "prettier": {
     "semi": false,
