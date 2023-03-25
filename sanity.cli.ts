@@ -5,4 +5,11 @@ export default defineCliConfig({
     projectId: 'wdj6ou2i',
     dataset: 'production',
   },
+  graphql: [
+    {
+      playground: true,
+      tag: 'lhowsam',
+      id: 'schema-production',
+    },
+  ],
 })
