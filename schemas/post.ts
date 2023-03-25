@@ -42,7 +42,8 @@ const post = defineType({
       name: 'body',
       title: 'body',
       description: 'body of post (rich text)',
-      type: 'block',
+      type: 'array',
+      of: [{ type: 'block' }],
     }),
     defineField({
       name: 'image',
