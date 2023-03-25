@@ -36,6 +36,13 @@ const project = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'body',
+      title: 'body',
+      description: 'body of post (rich text)',
+      type: 'array',
+      of: [{ type: 'block' }],
+    }),
+    defineField({
       name: 'siteUrl',
       title: 'deployed site URL',
       type: 'string',

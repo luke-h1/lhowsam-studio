@@ -29,13 +29,18 @@ const post = defineType({
       rows: 3,
       validation: (rule) => rule.required(),
     }),
-
     defineField({
       name: 'content',
       title: 'Content',
       description: 'Content of blog post',
       type: 'markdown',
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'body',
+      title: 'body',
+      description: 'body of post (rich text)',
+      type: 'block',
     }),
     defineField({
       name: 'image',
