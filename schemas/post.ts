@@ -1,3 +1,4 @@
+import { FiMinus } from "react-icons/fi";
 import {defineType, defineField} from 'sanity'
 import altField from './fields/altField'
 
@@ -5,6 +6,7 @@ const post = defineType({
   name: 'post',
   title: 'Blog Posts',
   type: 'document',
+  icon: FiMinus,
   fields: [
     defineField({
       name: 'title',
