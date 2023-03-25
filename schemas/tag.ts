@@ -1,9 +1,11 @@
+import {FiMinus} from 'react-icons/fi'
 import {defineField, defineType} from 'sanity'
 
 const tag = defineType({
   name: 'tag',
   title: 'Tags',
   type: 'document',
+  icon: FiMinus,
   fields: [
     defineField({
       name: 'title',
