@@ -39,6 +39,7 @@ const project = defineType({
       name: 'body',
       title: 'body',
       description: 'body of post (rich text)',
+      type: 'array',
       of: [{ type: 'block' }],
     }),
     defineField({
