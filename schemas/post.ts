@@ -39,13 +39,6 @@ const post = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'body',
-      title: 'body',
-      description: 'body of post (rich text)',
-      type: 'array',
-      of: [{ type: 'block' }],
-    }),
-    defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
