@@ -39,7 +39,7 @@ const project = defineType({
       name: 'body',
       title: 'body',
       description: 'body of post (rich text)',
-      type: 'block',
+      of: [{ type: 'block' }],
     }),
     defineField({
       name: 'siteUrl',
