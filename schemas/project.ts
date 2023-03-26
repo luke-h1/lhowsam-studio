@@ -1,4 +1,4 @@
-import { FiMinus } from "react-icons/fi";
+import {FiMinus} from 'react-icons/fi'
 import {defineField, defineType} from 'sanity'
 
 const project = defineType({

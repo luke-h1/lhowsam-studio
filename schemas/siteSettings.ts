@@ -17,4 +17,4 @@ const siteSettings = defineType({
     }),
   ],
 })
-export default siteSettings;
+export default siteSettings

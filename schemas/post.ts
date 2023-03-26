@@ -1,4 +1,4 @@
-import { FiMinus } from "react-icons/fi";
+import {FiMinus} from 'react-icons/fi'
 import {defineType, defineField} from 'sanity'
 import altField from './fields/altField'
 
