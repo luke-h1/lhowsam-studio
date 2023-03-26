@@ -5,6 +5,7 @@ import {deskTool} from 'sanity/desk'
 import {markdownSchema} from 'sanity-plugin-markdown'
 import {customStructure} from './deskStructure'
 import {schemaTypes} from './schemas'
+import {defaultDocumentNode} from './src/defaultDocumentNode'
 
 export default defineConfig({
   name: 'default',
@@ -14,6 +15,7 @@ export default defineConfig({
   plugins: [
     deskTool({
       structure: customStructure,
+      defaultDocumentNode,
     }),
     visionTool(),
     markdownSchema(),
