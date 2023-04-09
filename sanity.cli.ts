@@ -7,9 +7,8 @@ export default defineCliConfig({
   },
   graphql: [
     {
-      playground: true,
-      tag: 'lhowsam',
-      id: 'schema-production',
+      id: 'production',
+      workspace: 'default',
     },
   ],
 })
