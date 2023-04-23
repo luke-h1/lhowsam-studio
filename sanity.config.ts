@@ -23,7 +23,6 @@ export default defineConfig({
       widgets: [projectInfoWidget(), projectUsersWidget()],
     }),
   ],
-
   schema: {
     types: schemaTypes,
   },
