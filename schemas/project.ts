@@ -42,6 +42,14 @@ const project = defineType({
       description: 'Deployed project site URL',
     }),
     defineField({
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'githubUrl',
       title: 'Github URL',
       type: 'string',
