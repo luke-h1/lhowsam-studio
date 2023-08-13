@@ -5,6 +5,7 @@ import {deskTool} from 'sanity/desk'
 import {markdownSchema} from 'sanity-plugin-markdown'
 import {customStructure} from './deskStructure'
 import {schemaTypes} from './schemas'
+import { CustomMarkdownInput } from './src/components/CustomMarkdownInput'
 import {defaultDocumentNode} from './src/defaultDocumentNode'
 
 export default defineConfig({
@@ -18,7 +19,7 @@ export default defineConfig({
       defaultDocumentNode,
     }),
     visionTool(),
-    markdownSchema(),
+    markdownSchema({input: CustomMarkdownInput}),
     dashboardTool({
       widgets: [projectInfoWidget(), projectUsersWidget()],
     }),

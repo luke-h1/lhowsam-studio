@@ -34,7 +34,6 @@ const post = defineType({
       title: 'Content',
       description: 'Content of blog post',
       type: 'markdown',
-      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'image',
