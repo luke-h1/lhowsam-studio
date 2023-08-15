@@ -8,8 +8,7 @@ export function CustomMarkdownInput(props: JSX.IntrinsicAttributes & MarkdownInp
       return {
         options: {
           toolbar: ['bold', 'italic'],
-          spellChecker: true,
-          
+          inputStyle: "contenteditable", // fix for grammarly / native spell check not working
           // more options available, see:
           // https://github.com/Ionaru/easy-markdown-editor#options-list
         },
