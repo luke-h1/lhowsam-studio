@@ -11,7 +11,7 @@ export const customStructure = (S: StructureBuilder) => {
         .child(S.document().schemaType('siteSettings')),
       S.divider(),
       ...S.documentTypeListItems().filter(
-        (listItem) => !['variant', 'siteSettings'].includes(listItem.getId() as string)
+        (listItem) => !['variant', 'siteSettings'].includes(listItem.getId() as string),
       ),
     ])
 }
