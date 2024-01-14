@@ -56,6 +56,7 @@ const post = defineType({
       title: 'Tags',
       type: 'array',
       of: [{type: 'reference', to: {type: 'tag'}}],
+      validation: (rule) => rule.required(),
     }),
   ],
   preview: {
