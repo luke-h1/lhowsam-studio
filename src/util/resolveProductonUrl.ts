@@ -22,5 +22,6 @@ export default function resolveProductionUrl(doc: SanityDocument) {
   previewUrl.pathname = `/api/draft`
   previewUrl.searchParams.append(`secret`, previewSecret)
   previewUrl.searchParams.append(`slug`, getSlug(slug as unknown as Slug))
+  previewUrl.searchParams.append(`type`, doc._type)
   return previewUrl.toString().replaceAll('%2F', '/')
 }
