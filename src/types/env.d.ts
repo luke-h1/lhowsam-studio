@@ -1,6 +1,6 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    FRONTEND_URL: string
-    DRAFT_SECRET: string
+    SANITY_STUDIO_FRONTEND_URL: string
+    SANITY_STUDIO_DRAFT_SECRET: string
   }
 }

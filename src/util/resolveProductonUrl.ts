@@ -1,8 +1,8 @@
 // resolveProductionUrl.ts
 import type {SanityDocument, Slug} from 'sanity'
 
-const previewSecret = process.env.DRAFT_SECRET
-const remoteUrl = process.env.FRONTEND_URL
+const previewSecret = process.env.SANITY_STUDIO_DRAFT_SECRET
+const remoteUrl = process.env.SANITY_STUDIO_FRONTEND_URL
 const localUrl = `http://localhost:3000`
 
 function getSlug(slug: Slug) {
