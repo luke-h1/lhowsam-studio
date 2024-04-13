@@ -36,7 +36,7 @@ const talk = defineType({
     defineField({
       name: 'description',
       title: 'Description',
-      type: 'string',
+      type: 'text',
       rows: 5,
       validation: (rule) => rule.required(),
     }),
