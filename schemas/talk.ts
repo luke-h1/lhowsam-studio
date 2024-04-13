@@ -46,12 +46,6 @@ const talk = defineType({
       type: 'string',
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'file',
-      title: 'File',
-      type: 'string',
-      validation: (rule) => rule.required(),
-    }),
   ],
 })
 export default talk
