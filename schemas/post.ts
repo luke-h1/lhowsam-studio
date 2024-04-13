@@ -26,7 +26,6 @@ const post = defineType({
       title: 'Intro',
       description: 'short intro of the blog post',
       type: 'text',
-      rows: 3,
       validation: (rule) => rule.required(),
     }),
     defineField({
