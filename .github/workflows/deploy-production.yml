@@ -11,27 +11,27 @@ env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 jobs:
-  deploy: 
+  deploy:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
       - name: Install moreutils
         run: sudo apt install moreutils
-        
+
       # https://github.com/actions/virtual-environments/issues/1187
       - name: tune linux network
-        run: sudo ethtool -K eth0 tx off rx off            
+        run: sudo ethtool -K eth0 tx off rx off
 
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.1
+          node-version: 20.10.0
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 8
+          version: 9
           run_install: false
 
       - name: Get pnpm store directory
@@ -40,11 +40,6 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - name: Setup node
-        uses: luke-h1/setup-node@v2
-        with:
-          node-version: 18.12.1
-      
       - name: Checkout
         uses: luke-h1/checkout@v2
 
@@ -62,7 +57,7 @@ jobs:
 
       - name: build
         run: pnpm run build
-        
+
       - name: Deploy production
         run: vc -f --prod --token ${VERCEL_TOKEN}
         env:
