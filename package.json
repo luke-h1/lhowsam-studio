@@ -21,7 +21,7 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/dashboard": "^3.1.5",
+    "@sanity/dashboard": "^4.0.0",
     "@sanity/ui": "^2.8.8",
     "@sanity/vision": "^3.52.2",
     "check-node-version": "^4.2.1",
