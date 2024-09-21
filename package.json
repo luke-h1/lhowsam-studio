@@ -22,8 +22,8 @@
   ],
   "dependencies": {
     "@sanity/dashboard": "^4.0.0",
-    "@sanity/ui": "^2.8.8",
-    "@sanity/vision": "^3.52.2",
+    "@sanity/ui": "^2.8.9",
+    "@sanity/vision": "^3.57.4",
     "check-node-version": "^4.2.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
@@ -36,19 +36,19 @@
     "react-dom": "^18.3.1",
     "react-icons": "^4.10.1",
     "react-is": "^18.3.1",
-    "sanity": "^3.52.2",
+    "sanity": "^3.57.4",
     "sanity-plugin-iframe-pane": "^2.5.4",
     "sanity-plugin-markdown": "^4.1.2",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.0",
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
     "easymde": "^2.18.0",
     "eslint": "^8.47.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.2",
     "vercel": "^35.2.1"
   },
   "prettier": {
